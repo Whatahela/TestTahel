@@ -1,0 +1,150 @@
+
+html {font-family: 'Roboto', sans-serif;}
+
+body 
+/*איפוסים*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgb(107, 145, 98);
+    padding: 12px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-list {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+
+}
+
+.nav-item {
+    list-style: none;
+
+}
+
+.nav-link {
+    color: aliceblue;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);    
+    padding-bottom: 5px;
+    transition: 0.3s;
+
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+header{
+    background-image: url(../img/headerwall.jpg);  
+        background-position: center;
+        background-size: cover;
+        padding:  50px;
+        height: 60vh;
+        position: relative;
+}
+.header-content {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+h1 {
+    text-align: left;
+}
+header p{
+text-align: left;
+}
+
+
+.button{
+    background-color: rgb(223, 131, 209);
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    width: 130px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+
+}
+.button:hover{
+    background-color: rgb(207, 52, 184);
+}
+
+section.products {
+    padding: 50px;
+
+}
+section.products h2 {
+    text-align: center;
+
+}
+
+.product__flaxbox {
+    display: flex;
+    width: 75%;
+    max-width: 550px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    gap: 45px;
+    justify-content: center;
+
+}
+
+ h3{
+    text-align: center;
+}
+
+
+.product1 {
+    flex: 1;
+    padding: 25px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.product2 {
+    flex: 1;
+    padding: 25px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.product3 {
+    flex: 1;
+    padding: 25px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.product1 p,
+.product2 p,
+.product3 p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p.price {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+ 
+  section a.button {
+      color: antiquewhite;
+      justify-content: center;
+  }
