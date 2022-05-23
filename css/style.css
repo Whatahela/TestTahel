@@ -148,3 +148,37 @@ p.price {
       color: antiquewhite;
       justify-content: center;
   }
+
+
+  /* For width 400px and larger: */
+@media only screen and (max-width: 400px) {
+    header{
+        background-image: url(../img/headerwall.jpg);  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+            padding:  50px;
+            height: 60vh;
+            position: relative;
+    }
+    .header-content {
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    .product__flaxbox {
+        display: flex;
+        width: 75%;
+        max-width: 550px;
+        box-sizing: border-box;
+        margin: 20px auto;
+        gap: 45px;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+    }
+  }
