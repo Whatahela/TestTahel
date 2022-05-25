@@ -1,7 +1,7 @@
 
 html {font-family: 'Roboto', sans-serif;}
 
-body 
+ 
 /*איפוסים*/
 *{
     padding: 0;
@@ -49,7 +49,7 @@ header{
         background-position: center;
         background-size: cover;
         padding:  50px;
-        height: 60vh;
+        height: 500px;
         position: relative;
 }
 .header-content {
@@ -80,6 +80,8 @@ text-align: left;
     border-radius: 25px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
+    justify-content: center;
+    
 
 }
 .button:hover{
@@ -97,12 +99,14 @@ section.products h2 {
 
 .product__flaxbox {
     display: flex;
-    width: 75%;
-    max-width: 550px;
+    width: 90%;
+    max-width: 1200px;
     box-sizing: border-box;
     margin: 20px auto;
     gap: 45px;
     justify-content: center;
+    
+    
 
 }
 
@@ -111,27 +115,22 @@ section.products h2 {
 }
 
 
-.product1 {
+
+.product {
     flex: 1;
     padding: 25px;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+   
 }
-.product2 {
-    flex: 1;
-    padding: 25px;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+
+.product:hover{
+    transform: translateY(-10px);
 }
-.product3 {
-    flex: 1;
-    padding: 25px;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-}
-.product1 p,
-.product2 p,
-.product3 p {
+
+.product p {
   font-size: 0.9rem;
   text-align: center;
   margin-top: 20px;
@@ -142,35 +141,38 @@ p.price {
     font-weight: 700;
     margin-top: 20px;
     font-size: 1.3rem;
+    /* margin-bottom: 50px; */
   }
  
   section a.button {
       color: antiquewhite;
+      margin: 30px auto;
       justify-content: center;
+      
+      
   }
-
-
-  /* For width 400px and larger: */
-@media only screen and (max-width: 500px) {
-    header{
-        background-image: url(../img/headerwall.jpg);  
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-            padding:  50px;
-            height: 60vh;
-            position: relative;
-    }
-    .header-content {
-        width: 60%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+.product img{
+    width: 100%;
+}
+  
+.best-seller{
+    background: linear-gradient(98deg, rgba(194,64,182,1) 0%, rgba(253,45,161,1) 100%);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: antiquewhite;
     
-    }
 
-    .product__flaxbox {
+}
+@media only screen and (max-width: 850px){
+
+    .product__flaxbox {  
         display: flex;
         width: 75%;
         max-width: 550px;
@@ -179,6 +181,38 @@ p.price {
         gap: 45px;
         align-items: center;
         flex-direction: column;
-        align-content: center;
+        align-content: center; 
     }
-  }
+}
+  /* For width 400px and larger: */
+@media only screen and (max-width: 610px) {
+    header{
+        background-image: url(../img/headerwall.jpg);  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+            padding:  50px;
+            height: 80vh;
+            position: relative;
+    }
+    .header-content {
+        width: 60%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    .product__flaxbox {  
+        display: flex;
+        width: 75%;
+        max-width: 550px;
+        box-sizing: border-box;
+        margin: 20px auto;
+        gap: 45px;
+        align-items: center;
+        flex-direction: column;
+        align-content: center; 
+    }
+}
